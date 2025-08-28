@@ -56,23 +56,34 @@ header a {
 /* Banner */
 .banner {
     min-height: 400px;
-    background: #333 url('IMG-20250430-WA0001[1].jpg') no-repeat center top/cover;
     text-align: center;
     color: #fff;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* to contain the image */
 }
 
-.banner::before {
-    content: '';
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    z-index: -1; /* behind the content */
+}
+
+.banner-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0; /* on top of the image, behind the text */
 }
 
 .banner .container {
