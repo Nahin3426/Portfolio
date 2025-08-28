@@ -56,7 +56,7 @@ header a {
 /* Banner */
 .banner {
     min-height: 400px;
-    background: #333 url('IMG-20250430-WA0001[1].jpg') no-repeat center 20%/cover;
+    background: #333 url('IMG-20250430-WA0001[1].jpg') no-repeat center top/cover;
     text-align: center;
     color: #fff;
     position: relative;
