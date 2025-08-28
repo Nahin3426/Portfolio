@@ -108,8 +108,8 @@ section h2 {
     margin-bottom: 30px;
 }
 
-/* About */
-#about {
+/* About, Projects, Education, Contact */
+#about, #projects, #education, #contact {
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
 }
@@ -130,9 +130,14 @@ section h2 {
 }
 
 .project {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project a {
+    color: #61dafb;
 }
 
 /* Resume */
@@ -141,6 +146,10 @@ section h2 {
 }
 
 /* Contact */
+#contact a {
+    color: #61dafb;
+}
+
 #contact p {
     text-align: center;
 }
